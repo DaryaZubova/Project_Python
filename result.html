@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Result</title>
+        <style>
+            .result {font-size: 24px;}
+        </style>
+    </head>
+    <body>
+        <ol class="result">
+            <li><a href="/">Cats and Dogs Form</a></li>
+            <li><a href="/pymystem">Pymystem</a></li>
+            <li><a href="/nltk">NLTK</a></li>
+        </ol>
+
+        <h1>Cats: {{ for_cats }} votes</h1>
+        <h1>Dogs: {{ for_dogs }} votes</h1>
+
+        <ul class="result">
+            {% for name, number in users.items() %}
+                <li class="result">{{ name }} - {{ number }} </li>
+            {% endfor %}
+        </ul>
+
+    </body>
+</html>
